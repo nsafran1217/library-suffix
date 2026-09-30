@@ -165,6 +165,8 @@ const char *Q_ArchitectureStringByID( int arch, unsigned int abi, int endianness
 		return is64 ? "wasm64" : "wasm32";
 	case ARCHITECTURE_SPARC:
 		return is64 ? "sparc64" : "sparc";
+	case ARCHITECTURE_IA64:
+		return "ia64";
 	}
 
 	return is64 ?

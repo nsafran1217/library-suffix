@@ -90,6 +90,9 @@ static struct
 // but it's not applicable to us
 { ARCHITECTURE_SPARC, 0, -1, 0, "sparc" },
 { ARCHITECTURE_SPARC, 0, -1, 1, "sparc64" },
+
+// Itanium is 64-bit only; big endian mode is not used on Linux
+{ ARCHITECTURE_IA64, 0, -1, 1, "ia64" },
 };
 
 static int TestPlatformString( void )
