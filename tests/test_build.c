@@ -93,6 +93,9 @@ static struct
 
 // Itanium is 64-bit only; big endian mode is not used on Linux
 { ARCHITECTURE_IA64, 0, -1, 1, "ia64" },
+
+// PA-RISC is big endian only. hppa64 applications are not supported on Linux
+{ ARCHITECTURE_HPPA, 0, -1, 0, "hppa" },
 };
 
 static int TestPlatformString( void )

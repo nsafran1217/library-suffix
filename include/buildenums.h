@@ -117,6 +117,7 @@ For more information, please refer to <http://unlicense.org/>
 #define ARCHITECTURE_WASM    10
 #define ARCHITECTURE_SPARC   11
 #define ARCHITECTURE_IA64    12
+#define ARCHITECTURE_HPPA    13
 
 #if XASH_AMD64
 	#define XASH_ARCHITECTURE ARCHITECTURE_AMD64
@@ -138,6 +139,8 @@ For more information, please refer to <http://unlicense.org/>
 	#define XASH_ARCHITECTURE ARCHITECTURE_SPARC
 #elif XASH_IA64
 	#define XASH_ARCHITECTURE ARCHITECTURE_IA64
+#elif XASH_HPPA
+	#define XASH_ARCHITECTURE ARCHITECTURE_HPPA
 #else
 	#error
 #endif

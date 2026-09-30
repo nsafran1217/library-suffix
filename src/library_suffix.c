@@ -167,6 +167,8 @@ const char *Q_ArchitectureStringByID( int arch, unsigned int abi, int endianness
 		return is64 ? "sparc64" : "sparc";
 	case ARCHITECTURE_IA64:
 		return "ia64";
+	case ARCHITECTURE_HPPA:
+		return "hppa";
 	}
 
 	return is64 ?

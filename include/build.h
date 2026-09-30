@@ -64,6 +64,7 @@ Then you can use another oneliner to query all variables:
 #undef XASH_E2K
 #undef XASH_FREEBSD
 #undef XASH_HAIKU
+#undef XASH_HPPA
 #undef XASH_HURD
 #undef XASH_IA64
 #undef XASH_IOS
@@ -271,6 +272,8 @@ Then you can use another oneliner to query all variables:
 #elif defined __ia64__ || defined _M_IA64
 	#define XASH_64BIT 1
 	#define XASH_IA64 1
+#elif defined __hppa__
+	#define XASH_HPPA 1
 #else
 	#error "Place your architecture name here! If this is a mistake, try to fix conditions above and report a bug"
 #endif
